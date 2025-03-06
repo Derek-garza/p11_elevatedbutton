@@ -68,10 +68,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              ElevatedButton.icon(
+              ElevatedButton(
                 onPressed: () {},
-                icon: Icon(Icons.star),
-                label: Text('styleFromコンストラクタでサイズ変更'),
+                child: Text('コンストラクタでサイズ変更'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink,
                   minimumSize: Size(200, 50),
@@ -81,10 +80,9 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 20),
-              ElevatedButton.icon(
+              ElevatedButton(
                 onPressed: () {},
-                icon: Icon(Icons.settings),
-                label: Text('iconコンストラクタ'),
+                child: Text('コンストラクタ'),
                 style: ElevatedButton.styleFrom(
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
@@ -95,7 +93,6 @@ class MyApp extends StatelessWidget {
               SizedBox(height: 20),
               ElevatedButton.icon(
                 onPressed: () {},
-                icon: Icon(Icons.local_pizza),
                 label: Text('菠萝蜜'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.orange,
@@ -108,7 +105,6 @@ class MyApp extends StatelessWidget {
               SizedBox(height: 20),
               ElevatedButton.icon(
                 onPressed: () {},
-                icon: Icon(Icons.favorite),
                 label: Text('紫色按钮'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.purple,
@@ -124,4 +120,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-}S
+}
