@@ -20,9 +20,13 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               ElevatedButton.icon(
                 onPressed: () {},
-                icon: Icon(Icons.add),
+                icon: Icon(
+                  Icons.add,
+                  color: Colors.white,
+                ),
                 label: Text('ただのボタン'),
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blue,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -84,6 +88,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () {},
                 child: Text('コンストラクタ'),
                 style: ElevatedButton.styleFrom(
+                  backgroundColor: Color(0xffc670d5),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
@@ -107,7 +112,7 @@ class MyApp extends StatelessWidget {
                 onPressed: () {},
                 label: Text('紫色按钮'),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple,
+                  backgroundColor: Colors.blue,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),
                   ),
